@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjie Rosyidin</title>
+</head>
+<body>
+    <script>
+        function dash(angka){
+            var angkastring = angka.toString(); 
+            var ke = angkastring.length;
+            var result = [];
+
+            for(i=0;i<ke;i++){
+                if(angkastring[i]%2==0 && angkastring[i+1]%2==0){
+                    result=result + angkastring[i] + "-";
+                } else {
+                    result=result + angkastring[i];
+                }
+            }
+            console.log(result);
+        }
+        dash(553847)
+        dash(2468);
+    </script>
+</body>
+</html>
